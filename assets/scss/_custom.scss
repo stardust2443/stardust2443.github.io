@@ -1,32 +1,88 @@
+/* ===============================
+   Brand Variables
+================================= */
+
 :root {
   --royal-blue: #1e3a8a;
-  --royal-blue-bright: #2563eb;
+  --royal-blue-accent: #2563eb;
   --gold: #d4af37;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+
+  --bg-light: #ffffff;
+  --bg-dark: #111827;
+}
+
+/* ===============================
+   Global Background + Text
+================================= */
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: #e5e7eb;
+  }
+}
+
+/* ===============================
+   Layout Refinement
+================================= */
+
+.container {
+  max-width: 820px;
 }
 
 .hero {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
+/* ===============================
+   Typography Hierarchy
+================================= */
+
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-top: 20px;
+  font-weight: 500;
 }
 
 .descriptor {
-  margin-top: 25px;
-  opacity: 0.85;
+  margin-top: 22px;
+  font-size: 0.95rem;
+  opacity: 0.75;
 }
 
 .philosophy {
   margin-top: 25px;
   letter-spacing: 2px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-transform: uppercase;
   opacity: 0.6;
 }
+
+/* ===============================
+   Accent Divider
+================================= */
+
+.accent-line {
+  width: 50px;
+  height: 3px;
+  margin: 16px auto;
+  background-color: var(--gold);
+  border-radius: 2px;
+}
+
+/* ===============================
+   Call To Action Button
+================================= */
 
 .cta {
   margin-top: 35px;
@@ -36,19 +92,22 @@
   display: inline-block;
   padding: 14px 28px;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--royal-blue-bright), var(--royal-blue));
+  background: var(--royal-blue);
   color: white;
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
-  box-shadow: 0 8px 20px rgba(30, 58, 138, 0.35);
   transition: all 0.2s ease;
 }
 
 .resume-btn:hover {
+  background: var(--royal-blue-accent);
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(30, 58, 138, 0.45);
 }
+
+/* ===============================
+   Hero Navigation Pills
+================================= */
 
 .hero-nav {
   margin-top: 40px;
@@ -68,9 +127,11 @@
 }
 
 .pill:hover {
-  background: var(--royal-blue);
-  color: white;
+  border-color: var(--gold);
+  color: var(--gold);
 }
+
+/* Dark Mode Pill Adjustment */
 
 @media (prefers-color-scheme: dark) {
   .pill {
@@ -80,6 +141,6 @@
 
   .pill:hover {
     background: var(--gold);
-    color: #1a1c1f;
+    color: var(--bg-dark);
   }
 }
