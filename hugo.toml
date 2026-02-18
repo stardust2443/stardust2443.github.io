@@ -1,0 +1,11 @@
+baseURL = "https://arunmitra.page/"
+languageCode = "en-us"
+title = "Arun Mitra Kommireddy"
+theme = "hello-friend-ng"
+
+[params]
+  homeSubtitle = "First Principles | Structure | Agency"
+  defaultTheme = "light"
+  enableThemeToggle = false
+  showReadingTime = false
+  showShareButtons = false
