@@ -3,7 +3,7 @@
         {{ if .Site.Params.Logo.path }}
             <img src="{{ .Site.Params.Logo.path }}" alt="{{ .Site.Params.Logo.alt }}" />
         {{ else }}
-
+            <span class="logo-text">{{ .Site.Title }}</span>
         {{ end }}
     </div>
 </a>
