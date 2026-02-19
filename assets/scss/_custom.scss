@@ -31,13 +31,28 @@ body {
 }
 
 /* ===============================
-   Header Logo
+   Header Layout (Centered Logo)
+================================= */
+
+.header__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__right {
+  display: none; // hides menu + theme toggle for clean minimal header
+}
+
+/* ===============================
+   Header Logo Styling
 ================================= */
 
 .logo-text {
   font-weight: 600;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   color: var(--royal-blue);
   transition: color 0.2s ease;
 }
