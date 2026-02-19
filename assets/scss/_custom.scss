@@ -31,6 +31,32 @@ body {
 }
 
 /* ===============================
+   Header Logo
+================================= */
+
+.logo-text {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: var(--royal-blue);
+  transition: color 0.2s ease;
+}
+
+.logo-text:hover {
+  color: var(--gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo-text {
+    color: var(--gold);
+  }
+
+  .logo-text:hover {
+    color: white;
+  }
+}
+
+/* ===============================
    Layout Refinement
 ================================= */
 
@@ -132,8 +158,6 @@ body {
   border-color: var(--gold);
   color: var(--gold);
 }
-
-/* Dark Mode Pill Adjustment */
 
 @media (prefers-color-scheme: dark) {
   .pill {
