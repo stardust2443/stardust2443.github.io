@@ -39,13 +39,71 @@ body {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   width: 100%;
-  column-gap: 16px;
+  max-width: 620px;
+  margin: 0 auto;
+  column-gap: 14px;
 }
 
 .header__left {
+  position: relative;
   justify-self: start;
   display: flex;
   align-items: center;
+}
+
+.header__left .menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  display: none;
+  padding: 10px 12px;
+  border: 1px solid rgba(30, 58, 138, 0.15);
+  border-radius: 8px;
+  background: var(--bg-light);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.header__left .menu.open {
+  display: block;
+}
+
+.header__left .menu__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 0;
+}
+
+.header__left .menu__inner li {
+  margin: 0;
+}
+
+.menu-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(30, 58, 138, 0.2);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.menu-trigger svg,
+.header-icon-link svg,
+.home-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.header__center {
+  justify-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header__center {
@@ -66,32 +124,34 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--royal-blue);
-}
-
-.header-icon-link svg,
-.home-link svg {
-  width: 22px;
-  height: 22px;
+  color: var(--text-secondary);
 }
 
 .header-icon-link:hover,
-.home-link:hover {
-  color: var(--gold);
+.home-link:hover,
+.menu-trigger:hover {
+  color: var(--royal-blue);
 }
 
 @media (prefers-color-scheme: dark) {
+  .header__left .menu {
+    border-color: rgba(212, 175, 55, 0.25);
+    background: #0f172a;
+    box-shadow: none;
+  }
+
   .header-icon-link,
-  .home-link {
-    color: var(--gold);
+  .home-link,
+  .menu-trigger {
+    color: #cbd5e1;
   }
 
   .header-icon-link:hover,
-  .home-link:hover {
-    color: white;
+  .home-link:hover,
+  .menu-trigger:hover {
+    color: var(--gold);
   }
 }
-
 /* ===============================
    Header Logo Styling
 ================================= */
