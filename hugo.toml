@@ -4,8 +4,41 @@ title = "Arun Mitra Kommireddy"
 theme = "hello-friend-ng"
 
 [params]
-  homeSubtitle = "First Principles | Structure | Agency"
-  defaultTheme = "light"
+  homeSubtitle      = "First Principles | Structure | Agency"
+  defaultTheme      = "light"
   enableThemeToggle = false
-  showReadingTime = false
-  showShareButtons = false
+  showReadingTime   = false
+  showShareButtons  = false
+  description       = "Portfolio of Arun Mitra Kommireddy — Physics & Mechanical Engineering at BITS Pilani, research at University of Bologna, and experience at Swiggy."
+  author            = "Arun Mitra Kommireddy"
+  themeColor        = "#1e3a8a"
+
+[[menus.main]]
+  identifier = "thesis"
+  name       = "Thesis"
+  url        = "/thesis/"
+  weight     = 1
+
+[[menus.main]]
+  identifier = "projects"
+  name       = "Projects"
+  url        = "/projects/"
+  weight     = 2
+
+[[menus.main]]
+  identifier = "experience"
+  name       = "Experience"
+  url        = "/experience/"
+  weight     = 3
+
+[[menus.main]]
+  identifier = "finance"
+  name       = "Finance"
+  url        = "/finance/"
+  weight     = 4
+
+[[menus.main]]
+  identifier = "writing"
+  name       = "Writing"
+  url        = "/writing/"
+  weight     = 5
