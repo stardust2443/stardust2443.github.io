@@ -11,11 +11,12 @@ description: "Work experience, internships, and leadership — Arun Mitra Kommir
 *June 2025 – present · Remote / Bologna*
 *Advisor: Prof. Federico Marulli*
 
-**Computational Astrophysics using Observational Data from BOSS**
+**Computational Cosmology — Cosmic Void Size Function & Parameter Estimation**
 
 Independently secured an international research collaboration through direct faculty outreach.
 
-- Designed, executed, and benchmarked a reproducible analysis pipeline to identify voids in catalogs
+- Designed, executed, and benchmarked a reproducible void-finding and VSF pipeline
+- Extended to Bayesian (MCMC) cosmological parameter estimation; recovered σ₈ consistently across tracer subsamples
 - Led cross-border coordination across research teams to deliver structured analytical findings
 
 → Full methodology and findings documented in the [Thesis](/thesis/) section.

@@ -9,7 +9,7 @@ theme = "hello-friend-ng"
   enableThemeToggle = false
   showReadingTime   = false
   showShareButtons  = false
-  description       = "Portfolio of Arun Mitra Kommireddy — Physics & Mechanical Engineering at BITS Pilani, research at University of Bologna, and experience at Swiggy."
+  description       = "Portfolio of Arun Mitra Kommireddy — Physics & Mechanical Engineering graduate of BITS Pilani, computational cosmology research at University of Bologna."
   author            = "Arun Mitra Kommireddy"
   themeColor        = "#1e3a8a"
 
