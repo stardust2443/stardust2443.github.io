@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="container section-page">
+
+  <a href="/" class="back-nav" aria-label="Back to home">← Home</a>
+
+  <h1 class="section-title">{{ .Title }}</h1>
+  <div class="accent-line"></div>
+
+  {{ if .Params.toc }}
+    <nav class="section-toc" aria-label="Table of contents">
+      {{ .TableOfContents }}
+    </nav>
+  {{ end }}
+
+  {{ if .Content }}
+    <article class="section-content">
+      {{ .Content }}
+    </article>
+  {{ end }}
+
+  {{ if .Pages }}
+    <div class="section-posts">
+      {{ range .Pages }}
+        <a href="{{ .Permalink }}" class="section-post-link">
+          <span class="section-post-title">{{ .Title }}</span>
+          {{ if .Date }}
+            <span class="section-post-date">{{ time.Format "Jan 2006" .Date }}</span>
+          {{ end }}
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+
+</div>
+{{ end }}

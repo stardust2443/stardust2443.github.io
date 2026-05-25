@@ -1,5 +1,7 @@
 ---
 title: "Thesis: Astrophysics (Cosmology)"
+description: "Study of Cosmic Void Size Function using Computational Methods — Arun Mitra Kommireddy."
+toc: true
 ---
 
 #### Study of Cosmic Void Size Function using Computational Methods, validating it with simulated catalogs, and applying it to real data from the BOSS survey.
