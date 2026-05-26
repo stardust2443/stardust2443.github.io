@@ -39,8 +39,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 
 <!-- CSS -->
-{{ $opts := dict "transpiler" "libsass" "targetPath" "main.css" "outputStyle" "compressed" "enableSourceMap" true }}
-{{ with resources.Get "scss/main.scss" | toCSS $opts | minify | fingerprint }}
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "main.css" "outputStyle" "compressed" }}
+{{ with resources.Get "scss/main.scss" | toCSS $opts | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
 
