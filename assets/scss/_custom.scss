@@ -270,8 +270,8 @@ h1, h2 {
 
 .hero {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 72px;
 }
 
 /* Name */
@@ -310,22 +310,24 @@ h1, h2 {
   border-radius: 1px;
 }
 
-/* Tagline — Lora italic, not bold */
+/* Tagline — DM Sans, calm and restrained (not calligraphic Lora italic) */
 .tagline {
-  font-family: 'Lora', Georgia, serif;
-  font-style: italic;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 1.15rem;
-  line-height: 1.65;
-  color: var(--text-primary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
   margin-top: 28px;
-  max-width: 560px;
+  max-width: 540px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0.1px;
 }
 
 .tagline strong {
-  font-weight: inherit;  /* remove <strong> bold — let italic do the work */
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 /* Descriptor */
@@ -446,15 +448,15 @@ h1, h2 {
 
 @media (prefers-color-scheme: dark) {
   .pill {
-    color: #64748b;
+    color: #94a3b8;  /* lifted from #64748b — legible on dark bg */
   }
 
   .pill:hover {
-    color: #e2e8f0;
+    color: #f1f5f9;
   }
 
   .pill::after {
-    background-color: #e2e8f0;
+    background-color: #f1f5f9;
   }
 }
 
