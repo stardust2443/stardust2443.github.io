@@ -54,12 +54,19 @@ h1, h2 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --border: rgba(255, 255, 255, 0.08);
+    /* Flip core text + surface tokens so every element that reads them
+       (hero name, tagline, descriptor, buttons, section titles…) inverts
+       correctly. Without this, anything using --text-primary stays dark
+       navy and disappears against the dark background. */
+    --text-primary:   #f1f5f9;
+    --text-secondary: #9ca7bb;
+    --bg:             #111827;
+    --border:         rgba(255, 255, 255, 0.08);
   }
 
   body {
-    background-color: var(--bg-dark);
-    color: #dde1eb;
+    background-color: var(--bg);
+    color: var(--text-primary);
   }
 }
 
